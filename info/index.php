@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href="src/styles.css"></link>
+    <link rel='stylesheet' href="style.css"></link>
 </head>
 <body>
 
@@ -17,9 +16,9 @@
           <h2>Création de la team</h2>
           <h5>la team info a été constituée en réu BDI ! Mardi 2 Mars 2021</h5>
           <div style="height:200px;">
-              <image style='width: 33%' src='https://recyclesourcellc.com/images/stockp.png'></image>
-              <image style='width: 32%' src='https://tse3.mm.bing.net/th?id=OIP.7S3DMKQZCfGPV3nEWmWt4gHaE8&pid=Api'></image>
-              <image style='width: 32%' src='https://ak8.picdn.net/shutterstock/videos/1583458/thumb/3.jpg'></image>
+              <image style='height:100%' src='https://recyclesourcellc.com/images/stockp.png'></image>
+              <image style='height:100%' src='https://tse3.mm.bing.net/th?id=OIP.7S3DMKQZCfGPV3nEWmWt4gHaE8&pid=Api'></image>
+              <image style='height:100%' src='https://ak8.picdn.net/shutterstock/videos/1583458/thumb/3.jpg'></image>
           </div>
           <p>Faites place à la nouvelle team info... J'ai nommé <b>Jean-Donatien</b>, <b>Marie-Edwige</b> et <b>Thierry-margoulin</b> !</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -34,7 +33,7 @@
           <div class="fakeimg" style="height:200px;">
 
           </div>
-          <p>Tout plein de textes...</p>
+          <p>Tout plein de texte...</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
       </div>
@@ -68,7 +67,7 @@
         <div class="card">
           <h3>contactez le resp !</h3>
           <a href='https://m.me/100004713405770'>
-              <img style='width:80%; margin-left: 10%; padding-top:10%;padding-bottom:10%'id="fb_msg_icon" src="src/contact_us.png">
+              <img style='width:80%; margin-left: 10%; padding-top:10%;padding-bottom:10%'id="fb_msg_icon" src="contact_us.png">
           </a>
         </div>
       </div>
