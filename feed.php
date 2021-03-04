@@ -33,7 +33,12 @@
             <!-- CONTACT -->
             <div class="card">
               <h3>contactez le resp !</h3>
-              <a href='https://m.me/<?php echo json_decode(file_get_contents('src/fb_ids.json'),true)[$team];?>'>
+                <?php
+                    $raw_file = file_get_contents('src/fb_ids.json');
+                    $fb_ids = json_decode($raw_file,true);
+                    $fb_id = $fb_ids[$team];
+                ?>
+              <a href='https://m.me/<?php echo $fb_id;?>'>
                   <img style='width:80%; margin-left: 10%; padding-top:10%;padding-bottom:10%'id="fb_msg_icon" src="src/contact_us.png">
               </a>
             </div>
