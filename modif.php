@@ -6,11 +6,11 @@
         if (isset($_POST['type']) && isset($_POST['html'])){
             $type = $_POST['type'];
             $html = $_POST['html'];
-            if ($type=="article"){
-                $old_articles = file_get_contents($team.'/articles.html');
-                $new_articles = $old_articles.'\n'.$html;
-                file_put_contents($team.'/articles.html',$new_articles);
-            }
+
+            $old_articles = file_get_contents($team.'/'.$type.'.html');
+            $new_articles = $old_articles.'\n'.$html;
+            file_put_contents($team.'/'.$type.'.html',$new_articles);
+
         }
     ?>
     <meta charset='utf-8'></meta>
@@ -43,7 +43,7 @@
                     ?>
                 </textarea>
                 </div>
-                <input hidden name='type' value='article'>
+                <input hidden name='type' value='articles'>
             	<input style='margin-left:2.5%;margin-top: 10%; width:200px; height: 50px' type="submit" value="Envoyer" />
 
             </form>
@@ -54,6 +54,56 @@
             ?>
         </div>
 
+    </div>
+
+    <div class='card' style='height:600px;'>
+        <h2> Modification du premier cadre </h2>
+        <div class='form-little' style='margin-left:4%;'>
+            <form method="post" action="modif.php?t=<?php echo $team;?>">
+                <div id='areaWrapper' style="float:left;width:100%;border:1px solid blue">
+
+                <textarea id='objectifsTextArea' name="html">
+                    <?php
+                        echo file_get_contents ($team.'/objectifs.html');
+                    ?>
+                </textarea>
+                </div>
+                <input hidden name='type' value='objectifs'>
+                <input style='margin-left:37%;margin-top: 2%; width:200px; height: 50px' type="submit" value="Envoyer" />
+
+            </form>
+        </div>
+
+        <div class='form-little' id='objectifsPreview' style='width:25%; overflow:scroll; margin-left: 5%'>
+            <?php
+                echo file_get_contents ($team.'/objectifs.html');
+            ?>
+        </div>
+    </div>
+
+    <div class='card' style='height:600px;'>
+        <h2> Modification du deuxième cadre </h2>
+        <div class='form-little' style='margin-left:4%;'>
+            <form method="post" action="modif.php?t=<?php echo $team;?>">
+                <div id='areaWrapper' style="float:left;width:100%;border:1px solid blue">
+
+                <textarea id='membresTextArea' name="html">
+                    <?php
+                        echo file_get_contents ($team.'/membres.html');
+                    ?>
+                </textarea>
+                </div>
+                <input hidden name='type' value='membres'>
+                <input style='margin-left:37%;margin-top: 2%; width:200px; height: 50px' type="submit" value="Envoyer" />
+
+            </form>
+        </div>
+
+        <div class='form-little' id='membresPreview' style='width:25%; overflow:scroll; margin-left: 5%'>
+            <?php
+                echo file_get_contents ($team.'/membres.html');
+            ?>
+        </div>
     </div>
     <script src='realTimeEdit.js'></script>
 

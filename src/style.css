@@ -17,6 +17,16 @@ body {
   background: white;
 }
 
+.form-little{
+    border: 1px solid black;
+    width: 60%;
+    float: left;
+    padding: 1%;
+    height:70%;
+
+    margin-left:5px;
+}
+
 .formulaire{
 
     border: 1px solid black;
