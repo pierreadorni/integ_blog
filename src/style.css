@@ -17,6 +17,20 @@ body {
   background: white;
 }
 
+.formulaire{
+
+    border: 1px solid black;
+    width:100%;
+    height: 340px;
+    padding: 1%;
+}
+.preview {
+    height: 340px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid black;
+    overflow: scroll;
+}
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
