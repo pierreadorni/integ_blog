@@ -32,6 +32,9 @@
 
 </head>
 <body>
+    <a href='feed.php?t=<?php echo $team;?>'>
+        <img width=50px style='position:fixed; top:0; left:0;'src='https://i.pinimg.com/originals/81/6b/0a/816b0ac0aff866ec3a155995811b2a24.png'></img>
+    </a>
 
     <div class="header">
       <h2>Modification blog <?php echo 'Team '.$team;?></h2></h2>
