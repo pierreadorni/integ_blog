@@ -7,9 +7,15 @@
             $type = $_POST['type'];
             $html = $_POST['html'];
 
-            $old_articles = file_get_contents($team.'/'.$type.'.html');
-            $new_articles = $old_articles.'\n'.$html;
-            file_put_contents($team.'/'.$type.'.html',$new_articles);
+            if ($type == 'articles'){
+                $old_articles = file_get_contents($team.'/'.$type.'.html');
+                $new_articles = $old_articles.'\n'.$html;
+                file_put_contents($team.'/'.$type.'.html',$new_articles);
+            }else{
+                file_put_contents($team.'/'.$type.'.html',$html);
+            }
+
+
 
         }
     ?>
