@@ -20,7 +20,7 @@
 
             <a href='modif.php?t=<?php echo $team;?>'>
                 <img width=45px style='display:inline-block; margin-top:1px;'src='src/edit.png'></img>
-                <h2 style='display:inline-block; position:relative;top:-10px'>EDIT</h2>
+                <h2 style='display:inline-block; position:relative;top:-10px'>Edit</h2>
             </a>
 
         </div>
