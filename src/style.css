@@ -108,7 +108,9 @@ body {
     position :relative;
     top:-1px
 }
-
+.leftcolumn div{
+    overflow: hidden;
+}
 #topnav a h2 {
     color: white;
 }
