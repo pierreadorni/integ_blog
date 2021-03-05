@@ -4,6 +4,7 @@
 
 /* Add a gray background color with some padding */
 body {
+
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
@@ -15,6 +16,7 @@ body {
   font-size: 40px;
   text-align: center;
   background: white;
+  margin-top: 50px
 }
 
 .navelem:hover{
