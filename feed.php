@@ -13,12 +13,12 @@
 
         <div id="topnav">
 
-            <a href='index.html'>
-                <img width=45px style='display:inline-block'src='src/home.png'></img>
+            <a class='navelem' href='index.html' onmouseover='onHomeHover(this);' onmouseout='onHomeUnHover(this);'>
+                <img id='homeimg' width=45px style='display:inline-block'src='src/home.png'></img>
                 <h2 style='display:inline-block; position:relative;top:-10px'>Home</h2>
             </a>
 
-            <a href='modif.php?t=<?php echo $team;?>'>
+            <a class='navelem' href='modif.php?t=<?php echo $team;?>' onmouseover='onEditHover(this);' onmouseout='onEditUnHover(this);'>
                 <img width=45px style='display:inline-block; margin-top:1px;'src='src/edit.png'></img>
                 <h2 style='display:inline-block; position:relative;top:-10px'>Edit</h2>
             </a>
@@ -59,6 +59,6 @@
 
           </div>
         </div>
-
+        <script src='hover.js'></script>
 </body>
 </html>

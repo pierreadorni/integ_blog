@@ -17,7 +17,12 @@ body {
   background: white;
 }
 
-
+.navelem:hover{
+    background-color: #ffffff;
+}
+.black{
+    color:black;
+}
 .form-little{
     border: 1px solid black;
     width: 60%;
@@ -93,11 +98,15 @@ body {
     height: 50px;
     background-color: #333;
     z-index: 1000;
+    overflow: hidden;
 }
 #topnav a{
     text-decoration: none;
     display:inline-block;
-    margin-right: 30px
+    padding-right: 15px;
+    padding-left: 15px;
+    position :relative;
+    top:-1px
 }
 
 #topnav a h2 {

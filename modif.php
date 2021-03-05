@@ -35,13 +35,13 @@
 
     <div id="topnav">
 
-        <a href='index.html'>
-            <img width=45px style='display:inline-block'src='src/home.png'></img>
+        <a class='navelem' href='index.html' onmouseover='onHomeHover(this);' onmouseout='onHomeUnHover(this);'>
+            <img id='homeimg' width=45px style='display:inline-block;'src='src/home.png'></img>
             <h2 style='display:inline-block; position:relative;top:-10px'>Home</h2>
         </a>
 
-        <a href='feed.php?t=<?php echo $team;?>'>
-            <img width=45px style='display:inline-block; margin-top:1px;'src='src/read.png'></img>
+        <a class='navelem' href='feed.php?t=<?php echo $team;?>' onmouseover='onReadHover(this);' onmouseout='onReadUnHover(this);'>
+            <img width=45px style='display:inline-block; padding-top:1px;'src='src/read.png'></img>
             <h2 style='display:inline-block; position:relative;top:-10px'>Read</h2>
         </a>
 
@@ -127,6 +127,7 @@
         </div>
     </div>
     <script src='realTimeEdit.js'></script>
+    <script src='hover.js'></script>
 
 </body>
 </html>
