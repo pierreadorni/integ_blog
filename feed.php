@@ -10,9 +10,21 @@
     <title><?php echo 'Blog de la Team '.$team; ?></title>
 </head>
 <body>
-        <a href='modif.php?t=<?php echo $team;?>'>
-            <img width=50px style='position:fixed; top:0; left:0;'src='https://image.flaticon.com/icons/png/512/84/84380.png'></img>
-        </a>
+
+        <div id="topnav">
+
+            <a href='index.html'>
+                <img width=45px style='display:inline-block'src='src/home.png'></img>
+                <h2 style='display:inline-block; position:relative;top:-10px'>Home</h2>
+            </a>
+
+            <a href='modif.php?t=<?php echo $team;?>'>
+                <img width=45px style='display:inline-block; margin-top:1px;'src='src/edit.png'></img>
+                <h2 style='display:inline-block; position:relative;top:-10px'>EDIT</h2>
+            </a>
+
+        </div>
+
         <div class="header">
           <h2><?php echo 'Team '.$team;?></h2></h2>
         </div>
