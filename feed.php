@@ -60,9 +60,5 @@
           </div>
         </div>
 
-        <div class="footer">
-          <h2>Liens des autres blogs de team à insérer ici</h2>
-        </div>
-
 </body>
 </html>
