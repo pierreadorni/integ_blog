@@ -3,20 +3,18 @@
 <head>
     <?php
         $team = $_GET['t'];
-        if (isset($_POST['type']) && isset($_POST['html'])){
+
+        if (isset($_POST['type']) && isset($_POST['html'])) {
             $type = $_POST['type'];
             $html = $_POST['html'];
 
-            if ($type == 'articles'){
+            if ($type == 'articles') {
                 $old_articles = file_get_contents($team.'/'.$type.'.html');
                 $new_articles = $old_articles.'\n'.$html;
-                file_put_contents($team.'/'.$type.'.html',$new_articles);
-            }else{
-                file_put_contents($team.'/'.$type.'.html',$html);
+                file_put_contents($team.'/'.$type.'.html', $new_articles);
+            } else {
+                file_put_contents($team.'/'.$type.'.html', $html);
             }
-
-
-
         }
     ?>
     <meta charset='utf-8'></meta>
@@ -60,7 +58,7 @@
 
             	<textarea id='articleTextArea' rows="20" cols="130" wrap="physique" name="html">
                     <?php
-                        echo file_get_contents ('article_exemple.html');
+                        echo file_get_contents('article_exemple.html');
                     ?>
                 </textarea>
                 </div>
@@ -71,7 +69,7 @@
         </div>
         <div class='preview' id='articlePreview'>
             <?php
-                echo file_get_contents ('article_exemple.html');
+                echo file_get_contents('article_exemple.html');
             ?>
         </div>
 
@@ -85,7 +83,7 @@
 
                 <textarea id='objectifsTextArea' name="html">
                     <?php
-                        echo file_get_contents ($team.'/objectifs.html');
+                        echo file_get_contents($team.'/objectifs.html');
                     ?>
                 </textarea>
                 </div>
@@ -97,7 +95,7 @@
 
         <div class='form-little' id='objectifsPreview' style='width:25%; overflow:scroll; margin-left: 5%'>
             <?php
-                echo file_get_contents ($team.'/objectifs.html');
+                echo file_get_contents($team.'/objectifs.html');
             ?>
         </div>
     </div>
@@ -110,7 +108,7 @@
 
                 <textarea id='membresTextArea' name="html">
                     <?php
-                        echo file_get_contents ($team.'/membres.html');
+                        echo file_get_contents($team.'/membres.html');
                     ?>
                 </textarea>
                 </div>
@@ -122,7 +120,7 @@
 
         <div class='form-little' id='membresPreview' style='width:25%; overflow:scroll; margin-left: 5%'>
             <?php
-                echo file_get_contents ($team.'/membres.html');
+                echo file_get_contents($team.'/membres.html');
             ?>
         </div>
     </div>
