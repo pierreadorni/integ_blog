@@ -4,10 +4,10 @@
     <?php
         $team = $_GET['team'];
         $wrong_pass = false;
-        if (isset($_POST['pass'])){
+        if (isset($_POST['pass'])) {
             if (hash('md5', $_POST['pass']) == '3a8e8b3c91150fded1e49ef03639b992') {
                 echo '<meta http-equiv = "refresh" content = "0; url=modif.php?t='.$team.'" />';
-            }else{
+            } else {
                 $wrong_pass = true;
             }
         }
@@ -19,7 +19,7 @@
 <body>
     <form action='connect.php' method='post'>
         <?php
-        if ($wrong_pass){
+        if ($wrong_pass) {
             echo '<p><b>MAUVAIS MOT DE PASSE.</b></p>';
         }
         ?>
@@ -28,7 +28,3 @@
     </form>
 </body>
 </html>
-
-<?php
-
-?>
