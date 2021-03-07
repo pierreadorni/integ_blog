@@ -5,8 +5,12 @@
 <head>
 
     <meta charset='utf-8'></meta>
-    <title>Connexion à la page de modification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Authentification</title>
     <link rel='stylesheet' href="src/style.css"></link>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Skeleton/css/normalize.css">
+    <link rel="stylesheet" href="Skeleton/css/skeleton.css">
     <?php
         $team = $_GET['t'];
         $wrong_pass = false;
@@ -20,14 +24,22 @@
     ?>
 </head>
 <body>
-    <form action='connect.php?t=<?php echo $team;?>' method='post'>
-        <?php
-        if ($wrong_pass) {
-            echo '<p><b>MAUVAIS MOT DE PASSE.</b></p>';
-        }
-        ?>
-        <input type='password' name='pass'>
-        <input type='submit' value='connexion'>
-    </form>
+    <div class='container'>
+        <div class='row'>
+            <div class='one-half column' style='margin-top: 40vh; margin-left: 22vw'>
+                <form action='connect.php?t=<?php echo $team;?>' method='post'>
+                    <?php
+                    if ($wrong_pass) {
+                        echo '<p><b>MAUVAIS MOT DE PASSE.</b></p>';
+                    }
+                    ?>
+                    <label for="pass">Authentification</label>
+                    <input id='pass' type='password' name='pass' placeholder='Mot de passe'>
+                    <input class='button-primary' type='submit' value='connexion'>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -7,6 +7,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href="src/style.css"></link>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <title><?php echo 'Blog de la Team '.$team; ?></title>
 </head>
 <body>
