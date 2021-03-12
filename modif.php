@@ -19,9 +19,12 @@
     ?>
     <meta charset='utf-8'></meta>
     <title>Modification du blog de la team <?php echo $team;?></title>
+    
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel='stylesheet' href="src/style.css"></link>
 
     <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+
 
     <script src="codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src="codemirror/mode/xml/xml.js"></script>
